@@ -4,11 +4,10 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world, 
-var paper, ground, paperImg, dustbin, dustbinImg;
+var paper, ground, dustbin, dustbinImg;
 
 function preload(){
   dustbinImg = loadImage("dustbingreen.png");
-  paperImg   = loadImage("paper.png");
 }
 
 function setup() {
@@ -21,8 +20,7 @@ function setup() {
 
 ground = new Ground();
 paper = new Paper();
-paper.addImage(paperImg);
-
+	
 dustbin = createSprite(964,520,20,20);
 dustbin.addImage(dustbinImg);
 dustbin.scale=0.45;
