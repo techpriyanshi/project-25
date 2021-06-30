@@ -3,8 +3,9 @@ const Engine = Matter.Engine;
 const World  = Matter.World;
 const Bodies = Matter.Bodies;
 
-var engine, world, 
-var paper, ground, dustbin, dustbinImg;
+var engine, world;
+var ball, ground;
+var dustbin, dustbinImg;
 
 function preload(){
   dustbinImg = loadImage("dustbingreen.png");
